@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<Todo
+  todoInfo={
+    Object {
+      "editMode": false,
+      "id": 5,
+      "text": "yo",
+    }
+  }
+>
+  <li>
+    yo
+    <button
+      onClick={[Function]}
+    >
+      X
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      Edit
+    </button>
+  </li>
+</Todo>
+`;

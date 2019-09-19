@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<EditTodoForm
+  text="taco"
+>
+  <div>
+    <form
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="text"
+      >
+        Todo:
+      </label>
+      <input
+        id="text"
+        name="text"
+        onChange={[Function]}
+        type="text"
+        value="taco"
+      />
+      <button
+        type="submit"
+      >
+        Edit
+      </button>
+    </form>
+  </div>
+</EditTodoForm>
+`;

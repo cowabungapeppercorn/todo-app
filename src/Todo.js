@@ -2,6 +2,13 @@ import React from 'react';
 import EditTodoForm from './EditTodoForm';
 
 class Todo extends React.Component {
+  static defaultProps = {
+    todoInfo: {
+      text: "you should type things",
+      id: "this is not that unique",
+      editMode: false
+    }
+  }
 
   render() {
 

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders as expected 1`] = `
+<TodoList>
+  <div>
+    <NewTodoForm
+      addTodo={[Function]}
+    >
+      <div>
+        <form
+          onSubmit={[Function]}
+        >
+          <label
+            htmlFor="text"
+          >
+            Todo:
+          </label>
+          <input
+            id="text"
+            name="text"
+            onChange={[Function]}
+            value=""
+          />
+          <input
+            type="submit"
+          />
+        </form>
+      </div>
+    </NewTodoForm>
+    <ul>
+      <Todo
+        editTodo={[Function]}
+        key="5"
+        remove={[Function]}
+        todoInfo={
+          Object {
+            "editMode": false,
+            "id": 5,
+            "text": "yo",
+          }
+        }
+        toggleEdit={[Function]}
+      >
+        <li>
+          yo
+          <button
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+        </li>
+      </Todo>
+      <Todo
+        editTodo={[Function]}
+        key="12335"
+        remove={[Function]}
+        todoInfo={
+          Object {
+            "editMode": false,
+            "id": 12335,
+            "text": "gabba",
+          }
+        }
+        toggleEdit={[Function]}
+      >
+        <li>
+          gabba
+          <button
+            onClick={[Function]}
+          >
+            X
+          </button>
+          <button
+            onClick={[Function]}
+          >
+            Edit
+          </button>
+        </li>
+      </Todo>
+    </ul>
+  </div>
+</TodoList>
+`;

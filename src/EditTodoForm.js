@@ -4,8 +4,8 @@ class EditTodoForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = { 
-      text: this.props.text,
-      editMode: false
+      text: this.props.text
+      // editMode: false
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -13,7 +13,6 @@ class EditTodoForm extends React.Component {
 
   handleSubmit(evt) {
     evt.preventDefault();
-    console.log("ID ->", this.props.id, "TEXT ->", this.props.text)
     this.props.editTodo(this.props.id, this.state.text);
   }
 
@@ -27,11 +26,11 @@ class EditTodoForm extends React.Component {
         <form onSubmit={this.handleSubmit}>
 
           <label htmlFor="text">Todo:</label>
-          <input id="text" name="text" type="textarea"
+          <input id="text" name="text" type="text"
             value={this.state.text}
             onChange={this.handleChange} />
 
-          <input type="submit" value="Edit" />
+          <button type="submit">Edit</button>
 
         </form>
       </div>
