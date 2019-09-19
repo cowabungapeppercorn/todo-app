@@ -64,7 +64,7 @@ it('renders edit todo form on edit button click', () => {
   expect(wrapper.html()).toContain('editing...');
 });
 
-it('renders edit todo form on edit button click', () => {
+it('edits a todo on edit todo form submit', () => {
   let wrapper = mount(<TodoList />);
   wrapper.setState({
     todos: [
